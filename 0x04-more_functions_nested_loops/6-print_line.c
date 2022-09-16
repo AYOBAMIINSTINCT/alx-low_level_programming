@@ -1,19 +1,20 @@
-#include "holberton.h"
-#include <stdio.h>
+
+#include "main.h"
 
 /**
- * print_line - Print line dependent on the integer n.
- * @n : The number of '_' characters to use
- * Return: Void.
- */
+* print_line -> printing line
+* @n: integer params
+*/
 void print_line(int n)
 {
-	int i;
+	int x;
 
-	for (i = 0; i < n; i++)
+	if (n <= 0)
+		_putchar('\n');
+	else
 	{
-		_putchar('_');
+		for (x = 0; x < n; x++)
+			_putchar(95);
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
-
